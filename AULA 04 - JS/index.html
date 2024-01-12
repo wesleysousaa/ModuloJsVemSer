@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 04 - Aula04 - Js</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/906/906334.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="lateral-menu">
+        <a class="menu-btn" href="#primeira-questao">1.</a>
+        <a class="menu-btn" href="#segunda-questao">2.</a>
+        <a class="menu-btn" href="#terceira-questao">3.</a>
+        <a class="menu-btn" href="#quarta-questao">4.</a>
+        <a class="menu-btn" href="#quinta-questao">5.</a>
+        <a class="menu-btn" href="#sexta-questao">6.</a>
+        <a class="menu-btn" href="#setima-questao">7.</a>
+        <a class="menu-btn" href="#oitava-questao">8.</a>
+        <a class="menu-btn" href="#nona-questao">9.</a>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section id="primeira-questao">
+        <div class="enunciado">
+          <h2><span>1.</span>Primeira Questão</h2>
+          Faça um programa que leia um vetor numérico de 10 posições. Depois,
+          ordene o vetor em ordem crescente e apresente os elementos ordenados.
+          → Abaixo um modelo de saída do programa
+        </div>
+        <div class="resolucao">
+          <h2 id="text">Temos o seguinte vetor</h2>
+          <p id="message1" class="message text-white"></p>
+          <button class="btn btn-light" id="sortVectorFirst">
+            Ordenar vetor
+          </button>
+        </div>
+      </section>
+      <section id="segunda-questao">
+        <div class="enunciado">
+          <h2><span>2.</span>Segunda Questão</h2>
+          Crie um programa que faça a leitura de uma coleção de números de 1 a
+          30 e retorne somente os pares e a posição que cada elemento ocupa
+          dentro desta lista. → Abaixo um modelo de saída do programa
+        </div>
+        <div class="resolucao">
+          <h2 id="text-2">Veja os pares de 1 a 30</h2>
+          <button class="btn btn-primary" id="showPares">Ver Pares</button>
+          <div id="container2" class="baalonsMessage"></div>
+        </div>
+      </section>
+      <section id="terceira-questao">
+        <div class="enunciado">
+          <h2><span>3.</span>Terceira Questão</h2>
+          Crie um programa que liste uma sequência de 8 elementos numéricos.
+          Imprima na tela estes valores, altere os valores do primeiro, terceiro
+          e sexto elemento. Imprima o resultado na tela com as alterações. →
+          Abaixo um modelo de saída do programa
+        </div>
+        <div class="resolucao">
+          <h2>Modificação de valores</h2>
+          <p class="message" id="message3"></p>
+          <p class="message" id="message3Output"></p>
+        </div>
+      </section>
+      <section id="quarta-questao">
+        <div class="enunciado">
+          <h2><span>4.</span> Quarta Questão</h2>
+          Pafúncio curte muito um game antigo chamado Age of Empires na versão
+          II. Com certeza ela fica horas no jogo. O jogo tem 4 itens que é
+          preciso recolher para ajudar na evolução e construção dos prédios.
+          Pensando nesta contextualização, crie um programa que liste os 4 itens
+          (ouro, prata, madeira e pedra) e a quantidade que você tem de cada
+          item no momento em que está jogando AOE II na Idade das Trevas e Idade
+          dos Castelos:
+          <ol>
+            <li>Quanto tem de sacas de cada elemento para cada nível;</li>
+            <li>A soma de todos os valores das sacas para cada nível;</li>
+          </ol>
+        </div>
+        <div class="resolucao">
+          <h2>Age of empires II</h2>
+          <p class="message" id="ageDarkness"></p>
+          <p class="message" id="ageCastles"></p>
+          <p class="message" id="ageDarknessTotal"></p>
+          <p class="message" id="ageCastlesTotal"></p>
+        </div>
+      </section>
+      <section id="quinta-questao">
+        <div class="enunciado">
+          <h2><span>5.</span> Quinta Questão</h2>
+          Você cuida do cardápio de uma casa de queijos. Este cardápio está
+          armazenado numa pequena base de dados, porém será preciso ajustar
+          algumas coisas, como os nomes dos produtos que a casa está
+          comercializando que mudaram e a organização. Será preciso criar um
+          programa que:
+          <ol>
+            <li>
+              Liste os nomes dos queijos (Mussarela, Minas, Parmesão, Prato,
+              Gorgonzola);
+            </li>
+            <li>Imprima na tela essa lista;</li>
+            <li>
+              Adicione ao final da lista os queijos esquecidos (Mascarpone,
+              Ricota, Provolone);
+            </li>
+            <li>Imprima na tela com a adição destes elementos;</li>
+            <li>Classifique em ordem crescente;</li>
+            <li>Imprima na tela para verificação;</li>
+            <li>
+              Você esqueceu de inserir o queijo Cottage, ele precisa ser
+              inserido já na ordem de classificação alfabética;
+            </li>
+            <li>
+              Imprima na tela o resultado para verificar se o queijo Cottage
+              ficou na ordem correta;
+            </li>
+          </ol>
+        </div>
+        <div class="resolucao">
+          <h2>Casa de queijos</h2>
+          <div id="container5" class="baalonsMessage"></div>
+        </div>
+      </section>
+      <section id="sexta-questao">
+        <div class="enunciado">
+          <h2><span>6.</span> Sexta Questão</h2>
+          Mafalda trabalha numa biblioteca e frequentemente ela verifica no
+          sistema quantos livros fazem parte do acervo e quais são estes livros.
+          Excepcionalmente hoje, além dela fazer a verificação de todos os
+          livros, ela precisa verificar quantos e quais são os livros da
+          categoria de Terror que a biblioteca possui. Crie um programa que
+          percorra toda a lista de livros e retorne os títulos de todos os
+          livros que estão catalogados e, em seguida, liste somente os livros da
+          categoria Terror.
+        </div>
+        <div class="resolucao">
+          <h2>Livraria</h2>
+          <div id="container6" class="baalonsMessage"></div>
+        </div>
+      </section>
+      <section id="setima-questao">
+        <div class="enunciado">
+          <h2><span>7.</span> Setima Questão</h2>
+          Felisberta é uma desenvolvedora Front End e ela precisa criar um
+          programa para o campeonato da sua escola. O programa precisa ler uma
+          lista de tipos de medalhas (Ouro, Prata e Bronze) e determinar que
+          somente as posições 1º, 2º e 3º lugares receberão medalhas, as
+          posições 4º e 5º não receberão medalhas e precisam estar descritas no
+          programa. Observe o modelo de saída do programa, na imagem abaixo:
+        </div>
+        <div class="resolucao">
+          <h2>Campeonato</h2>
+          <div class="baalonsMessage" id="container7"></div>
+        </div>
+      </section>
+      <section id="oitava-questao">
+        <div class="enunciado">
+          <h2><span>8.</span> Oitava Questão</h2>
+          A Teoria dos Conjuntos é uma teoria bastante utilizada na Matemática.
+          Contudo, a noção básica de conjunto não é uma coisa definida; ela é
+          aceita intuitivamente, o que é conhecido como noção primitiva. Ela foi
+          usada primeiramente pelo matemático Georg Cantor (1845-1918), que
+          determinou o conjunto como uma coleção de objetos bem definidos e
+          discerníveis, conhecidos como elementos do conjunto.
+          (https://matematicario.com.br/blog/teoria-dos-conjuntos/). A união de
+          conjuntos corresponde a junção dos elementos dos conjuntos dados, ou
+          seja, é o conjunto formado pelos elementos de um conjunto mais os
+          elementos dos outros conjuntos. Se existirem elementos que se repetem
+          nos conjuntos, ele aparecerá uma única vez no conjunto união. A
+          intersecção de conjuntos corresponde aos elementos que se repetem nos
+          conjuntos dados. Ela é representada pelo símbolo ∩. A diferença de
+          conjuntos é representada pelos elementos de um conjunto que não
+          aparecem no outro conjunto. Dados os conjuntos: A = {2, 4, 6, 7, 8 ,
+          22, 45, 34, 89, 75, 62, 54} B = {22, 23, 57, 45, 77, 62, 56, 54, 97,
+          88, 33, 5} Crie um programa usando estruturas condicionais e
+          array.map() para retornar os resultados da União, Interseção e
+          diferença dos conjuntos. O retorno do programa deverá ter os elementos
+          do conjunto em ordem crescente. → Abaixo um modelo de saída do
+          programa
+        </div>
+        <div class="resolucao" id="resolucao-eigth">
+          <h2>Dados os Conjuntos</h2>
+          <div class="baalonsMessage" id="container8"></div>
+        </div>
+      </section>
+      <section id="nona-questao">
+        <div class="enunciado">
+          <h2><span>9.</span> Nona Questão</h2>
+          Você é dono de uma pizzaria e no final do dia sempre será gerado um
+          relatório resumido dos produtos que foram consumidos no dia. Este
+          relatório gera uma lista de informações com a identificação, nome do
+          cliente, a pizza que comeu. Você precisa consultar no relatório:
+          <ol>
+            <li>Quais foram os pedidos de pizza;</li>
+            <li>Quais os clientes que pediram refrigerante;</li>
+            <li>Quais os clientes que pediram suco;</li>
+            <li>Quais os clientes que pediram cerveja;</li>
+            <li>Dica: você pode usar os métodos filter e map no Array;</li>
+          </ol>
+        </div>
+        <div class="resolucao">
+          <h2>Pizzaria Gula - Relatório Diário</h2>
+          <div class="baalonsMessage" id="container9"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      Desenvolvido atenciosamente por Wesley Souza.
+      <div class="social-medias">
+        <a href="https://www.instagram.com/_wez_z/" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/wesley.sousa.169067" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/wesley-alencar-souza-28a16021b/"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCwvtSaVkYAg5L5Z4b1NSSiA"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+            />
+          </svg>
+        </a>
+        <a href="https://twitter.com/_wez_z" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-twitter"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/primeira.js"></script>
+    <script src="./js/segunda.js"></script>
+    <script src="./js/terceira.js"></script>
+    <script src="./js/quarta.js"></script>
+    <script src="./js/quinta.js"></script>
+    <script src="./js/sexta.js"></script>
+    <script src="./js/setima.js"></script>
+    <script src="./js/oitava.js"></script>
+    <script src="./js/nona.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
