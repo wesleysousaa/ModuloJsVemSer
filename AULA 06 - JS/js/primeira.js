@@ -5,7 +5,8 @@ let arrPeoples = [];
 
 let totalSpeed = 0;
 
-const randomSort = () => Math.random() - 0.5;
+const randomSort = () =>
+  arrPeoples[Math.floor(Math.random() * arrPeoples.length)];
 
 const clearAll = () => {
   const peoplesOutput = document.getElementById("peoples-output");
@@ -37,11 +38,12 @@ const showPeoples = async () => {
     });
   };
 
-  for (const people of arrPeoples) {
+  if (arrPeoples.length > 0) {
     try {
-      await waitSort(totalSpeed / arrPeoples.length);
       const peoplesOutput = document.getElementById("peoples-output");
-      peoplesOutput.innerHTML += `<li class="people-sorted" style="animation-name:aparicaoNumber">${people}</li>`;
+      peoplesOutput.innerHTML = `<h3 style="animation:aparicaoNumber 100ms ease-in-out">O GRANDE SORTEADO DA VEZ É...</h3>`;
+      await waitSort(totalSpeed / arrPeoples.length);
+      peoplesOutput.innerHTML += `<li class="people-sorted" style="animation-name:aparicaoNumber">${randomSort()}</li>`;
     } catch (error) {
       peoplesOutput.innerHTML = error;
     }
@@ -50,7 +52,6 @@ const showPeoples = async () => {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  arrPeoples.sort(randomSort);
   clearAll();
   showPeoples();
 });
