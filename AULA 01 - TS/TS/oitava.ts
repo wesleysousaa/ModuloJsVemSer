@@ -1,16 +1,16 @@
 const readline = require("readline");
 
 interface Nota {
-  nota: GLfloat;
-  peso: GLfloat;
+  nota: number;
+  peso: number;
 }
 
 const calularMediaPonderada = (nota1: Nota, nota2: Nota, nota3: Nota): void => {
-  const pesoTotal: GLfloat = nota1.peso + nota2.peso + nota3.peso;
-  const notaComPeso: GLfloat =
+  const pesoTotal: number = nota1.peso + nota2.peso + nota3.peso;
+  const notaComPeso: number =
     nota1.nota * nota1.peso + nota2.nota * nota2.peso + nota3.nota * nota3.peso;
 
-  const media: GLfloat = notaComPeso / pesoTotal;
+  const media: number = notaComPeso / pesoTotal;
 
   console.log(`A média ponderada do aluno é: ${media.toFixed(2)}`);
 };
